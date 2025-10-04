@@ -4,6 +4,8 @@ from .models import *
 # Register your models here.
 @admin.register(Post)
 class AdminPost(admin.ModelAdmin):
-    list_display = ['author','title','category','status','created_at','published_at']
+    list_display = ['id','author','title','category','status','created_at','published_at']
 
-admin.site.register(Category)
+@admin.register(Category)
+class AdminCategory(admin.ModelAdmin):
+    list_display = ["id","name"]

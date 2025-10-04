@@ -61,7 +61,7 @@ class Profile(models.Model):
     image = models.ImageField(null=True,blank=True)
     description = models.TextField()
     created_at = models.DateTimeField(auto_now_add=True)
-    uodated_at = models.DateTimeField(auto_now=True)
+    updated_at = models.DateTimeField(auto_now=True)
 
     def __str__(self):
         return self.user.email

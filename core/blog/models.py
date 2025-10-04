@@ -12,7 +12,7 @@ class Post(models.Model):
 
     image = models.ImageField(null=True,blank=True)
     title = models.CharField(max_length=255)
-    author = models.ForeignKey(User,on_delete=models.CASCADE)
+    author = models.ForeignKey('accounts.Profile',on_delete=models.CASCADE)
     content = models.TextField()
     category = models.ForeignKey('Category',on_delete=models.SET_NULL,null=True)
     status = models.BooleanField(default=False)

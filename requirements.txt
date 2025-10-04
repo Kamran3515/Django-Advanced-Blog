@@ -1,3 +1,12 @@
 Django >=5.0
 python-decouple
 Pillow
+djangorestframework
+markdown       
+django-filter 
+drf-yasg[validation]
+pytest
+pytest-django
+faker
+celery
+redis
